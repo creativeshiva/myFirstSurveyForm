@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+  <Title>Shiva Survey Form</Title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1 id="title">Survey Form SHIVA BLOG</h1>
+<div id="form-outer">
+  <p id="description">
+    Let us know how we can improve the Blog site.
+  </p>
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name"><strong>*</strong> Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email"><strong>*</strong> Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age"><strong>*</strong> Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="2" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which page best describes the best?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="home">Home</option>
+      <option value="about">About us</option>
+      <option value="privacy">privacy</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* How likely is that you would recommend Our Blog Site to a friend?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What do you like most in Blog post: </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="images">Images</option>
+      <option value="quotes">Quotes</option>
+      <option value="story">Story</option>
+      <option value="readability">Readability</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Home Page</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Posts</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Story</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Images</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Privacy</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">support</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">About</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Readability</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</body>
